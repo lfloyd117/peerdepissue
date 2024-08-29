@@ -1,0 +1,39 @@
+{
+    "glint": {
+        "environment": ["ember-loose"]
+    },
+    "compilerOptions": {
+        "allowJs": false,
+        "allowImportingTsExtensions": true,
+        "allowSyntheticDefaultImports": true,
+        "alwaysStrict": true,
+        "experimentalDecorators": true,
+        "incremental": false,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "module": "es2022",
+        "moduleResolution": "node",
+
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strictNullChecks": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+
+        "target": "es2020",
+        "skipLibCheck": true,
+        "noEmitOnError": false,
+        "noEmit": true,
+
+        "baseUrl": ".",
+        "paths": {
+            "test-add-device-addon/tests/*": ["tests/*"],
+            "test-add-device-addon/*": ["app/*"],
+            "*": ["types/*"]
+        }
+    }
+}
