@@ -1,0 +1,17 @@
+# .gitignore
+node_modules
+dist
+declarations
+*/tsconfig.tsbuildinfo
+*.tsbuildinfo
+.eslintcache
+*.orig
+
+affected
+affected.json
+.idea
+
+**/test-output/**
+
+# Bundle analyzer
+**/concat-stats-for/**
