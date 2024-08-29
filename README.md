@@ -17,5 +17,6 @@ This repo aims to be a reproduction of this issue.
 ## Reproduction steps
 
 - Run `pnpm install` to install all Node packages in repo. 
+- Run `pnpm -r build-addon` to build the addons
 - Run `pnpm --filter my-app build-dev` to build the app using Embroider
 - Observe
