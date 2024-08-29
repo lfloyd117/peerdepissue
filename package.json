@@ -36,6 +36,7 @@
     "@types/ember-data__store": "~4.0.4",
     "@typescript/analyze-trace": "^0.10.1",
     "date-fns": "~2.29.3",
+    "ember-source": "~4.12.4",
     "ember-template-lint": "~5.13.0",
     "eslint": "~8.57.0",
     "gulp": "~4.0.2",
