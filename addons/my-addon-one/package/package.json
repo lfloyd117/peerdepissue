@@ -89,6 +89,9 @@
     "publishConfig": {
         "registry": "https://registry.npmjs.org"
     },
+    "peerDependencies": {
+        "ember-source": ">= 4.12.4"
+    },
     "ember": {
         "edition": "octane"
     },

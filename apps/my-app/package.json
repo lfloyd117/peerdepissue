@@ -17,10 +17,16 @@
         "lint:js": "eslint . --cache --quiet",
         "lint:scss": "stylelint \"app/**/*.scss\" --quiet",
         "lint:ts": "tsc --noemit",
-        "build-dev": "ember build",
-        "build-production": "pnpm run build-dev --environment=production",
+        "build-dev": "pnpm _syncPnpm && ember build",
+        "build-production": "pnpm _syncPnpm && pnpm run build-dev --environment=production",
         "test": "npm-run-all lint test:*",
+        "_syncPnpm": "pnpm sync-dependencies-meta-injected",
         "test:ember": "ember test"
+    },
+    "dependenciesMeta": {
+        "@blackmesa/my-addon-one": {
+            "injected": true
+        }
     },
     "devDependencies": {
         "@babel/core": "~7.24.7",
@@ -34,8 +40,8 @@
         "@ember/render-modifiers": "~2.1.0",
         "@ember/string": "~3.1.1",
         "@ember/test-helpers": "~2.9.3",
-        "@embroider/core": "~3.4.14",
         "@embroider/compat": "~3.6.0",
+        "@embroider/core": "~3.4.14",
         "@embroider/test-setup": "~4.0.0",
         "@embroider/webpack": "~4.0.4",
         "@glimmer/component": "~1.1.2",
@@ -90,6 +96,7 @@
         "loader.js": "~4.7.0",
         "mini-css-extract-plugin": "~2.9.0",
         "npm-run-all": "~4.1.5",
+        "pnpm-sync-dependencies-meta-injected": "^0.0.14",
         "postcss": "~8.4.38",
         "postcss-scss": "~4.0.9",
         "prettier": "~2.8.7",
