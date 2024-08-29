@@ -32,6 +32,10 @@
         "declaration": true,
         "declarationDir": "declarations",
         "noEmitOnError": false,
-        "rootDir": "./src"
+        "rootDir": "./src",
+        "types": [
+            "../../../node_modules/ember-source/types/stable/index.d.ts",
+            "../../../node_modules/ember-source/types/preview/index.d.ts"
+        ]
     }
 }

@@ -17,16 +17,10 @@
         "lint:js": "eslint . --cache --quiet",
         "lint:scss": "stylelint \"app/**/*.scss\" --quiet",
         "lint:ts": "tsc --noemit",
-        "build-dev": "pnpm _syncPnpm && ember build",
-        "build-production": "pnpm _syncPnpm && pnpm run build-dev --environment=production",
+        "build-dev": "ember build",
+        "build-production": "pnpm run build-dev --environment=production",
         "test": "npm-run-all lint test:*",
-        "_syncPnpm": "pnpm sync-dependencies-meta-injected",
         "test:ember": "ember test"
-    },
-    "dependenciesMeta": {
-        "@blackmesa/my-addon-one": {
-            "injected": true
-        }
     },
     "devDependencies": {
         "@babel/core": "~7.24.7",
@@ -122,5 +116,8 @@
     },
     "ember": {
         "edition": "octane"
+    },
+    "dependencies": {
+        "miragejs": "0.1.43"
     }
 }
