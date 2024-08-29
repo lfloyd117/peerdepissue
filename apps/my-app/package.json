@@ -1,17 +1,17 @@
 {
-  "name": "my-app",
-  "version": "0.0.0",
-  "private": true,
-  "description": "Small description for my-app goes here",
-  "repository": "",
-  "license": "UNLICENSED",
-  "author": "",
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
-  },
-  "scripts": {
-    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
+    "name": "my-app",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Small description for my-app goes here",
+    "repository": "",
+    "license": "UNLICENSED",
+    "author": "",
+    "directories": {
+        "doc": "doc",
+        "test": "tests"
+    },
+    "scripts": {
+        "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
         "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
         "lint:hbs": "ember-template-lint . --quiet",
         "lint:js": "eslint . --cache --quiet",
@@ -21,9 +21,9 @@
         "build-production": "pnpm run build-dev --environment=production",
         "test": "npm-run-all lint test:*",
         "test:ember": "ember test"
-  },
-  "devDependencies": {
-    "@babel/core": "~7.24.7",
+    },
+    "devDependencies": {
+        "@babel/core": "~7.24.7",
         "@babel/eslint-parser": "~7.22.15",
         "@babel/plugin-proposal-decorators": "~7.23.2",
         "@babel/plugin-transform-class-static-block": "~7.24.7",
@@ -109,11 +109,11 @@
         "vinyl": "~2.2.1",
         "webpack": "~5.92.1",
         "webpack-cli": "~5.1.1"
-  },
-  "engines": {
-    "node": ">= 18"
-  },
-  "ember": {
-    "edition": "octane"
-  }
+    },
+    "engines": {
+        "node": ">= 18"
+    },
+    "ember": {
+        "edition": "octane"
+    }
 }

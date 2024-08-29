@@ -1,6 +1,6 @@
 {
-  "compilerOptions": {
-    "allowJs": false,
+    "compilerOptions": {
+        "allowJs": false,
         "allowImportingTsExtensions": true,
         "allowSyntheticDefaultImports": true,
         "alwaysStrict": true,
@@ -25,12 +25,12 @@
         "skipLibCheck": true,
         "noEmitOnError": false,
         "noEmit": true,
-        
-    "baseUrl": ".",
-    "paths": {
-      "my-app/tests/*": ["tests/*"],
-      "my-app/*": ["app/*"],
-      "*": ["types/*"]
+
+        "baseUrl": ".",
+        "paths": {
+            "my-app/tests/*": ["tests/*"],
+            "my-app/*": ["app/*"],
+            "*": ["types/*"]
+        }
     }
-  }
 }
